@@ -641,8 +641,8 @@ export async function processDiscordMessage(
         resolveTurn: () => ({
           channel: "discord",
           accountId: route.accountId,
+          agentId: route.agentId,
           routeSessionKey: persistedSessionKey,
-          storePath: turn.storePath,
           ctxPayload,
           recordInboundSession,
           record: turn.record,
